@@ -1,0 +1,171 @@
+.CardsPage {
+    /* background: green; */
+    background: black;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* .CardsAddCardForm {
+  flex: 1;
+} */
+
+.CardsPanel {
+    display: flex;
+    /* background: brown; */
+    flex-wrap: wrap;
+    flex: 3;
+}
+
+.CardsPanel .urlLink {
+  color: purple;
+  cursor: pointer;
+}
+
+.Card {
+    min-width: 300px;
+    min-height: 350px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-transition: 1s;
+    transition: 1s;
+    margin: 5px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* .Card:hover {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+    margin-left: -130px;
+} */
+
+.Card-back {
+    background: blue;
+    transform: rotateY(180deg);
+    /* transform: translateY(-1rem); */
+}
+
+/* .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  } */
+
+
+.flip-card {
+    background-color: transparent;
+    width: 260px;
+    height: 370px;
+    perspective: 1000px;
+    margin: 5px;
+    transition: 1s;
+}
+  
+/* .flip-card:hover {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+    margin-left: -130px;
+}  */
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    
+    
+  }
+  
+  /* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  } */
+  .flip-card .flip-card-inner.clicked {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    box-shadow: 0 4px 8px 0 #202020;
+    /* background: red; */
+    border-radius: 6px;
+  }
+  
+  .flip-card-front {
+    /* background-color: blue; */
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 16px; */
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    /* border-radius: 16px; */
+    overflow: hidden;
+  }
+
+  .flip-card-content {
+    margin: 10px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+      /* margin: 7px; */
+   
+      /* background-position: center center; */
+      /* background-image: url("../images/cards/bicyclestandard-blue.png");
+      background-repeat: no-repeat; */
+      /* flex: 1; */
+    /* background: rgb(119, 165, 51); */
+    background: transparent;
+    
+  }
+
+  .card-video {
+    outline: none;
+    height: 130px;
+    width: 250px;
+  }
+
+  .cardRatingPanel {
+    height: 50px;
+    width: 100px;
+    /* display: flex;
+    overflow: hidden; */
+  }
+
+  .card-ActionsPanel {
+    background: #e11f37;
+  }
+
+
+  @media (max-width: 650px) {
+    /*.nav {
+      display: none;*/
+      /*position: fixed;
+      bottom: 0;*/
+    /*}*/
+  
+    .CardsPanel {
+      /* display: none; */
+      flex-direction: column;
+      align-items: center;
+    }
+  }

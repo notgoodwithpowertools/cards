@@ -1,0 +1,10 @@
+.RatingsPanel {
+
+    /* background: pink; */
+    margin: 2px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 
 	
 // import './fonts/ubuntu/Ubuntu-Medium.ttf'
+import './css/Lato.css'
 import './index.css'
 import AppRouter from './components/AppRouter.jsx'
 import * as serviceWorker from './serviceWorker'

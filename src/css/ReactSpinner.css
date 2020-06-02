@@ -1,0 +1,18 @@
+.ReactSpinner {
+    /* transition: 600ms ease all; */
+    transition: display 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RS-logo {
+    height: 15vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .RS-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }

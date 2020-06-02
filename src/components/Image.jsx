@@ -35,8 +35,11 @@ const Image = ( props ) => {
       backgroundSize: size,
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat'
+      // margin: 'auto'
 
     }
+
+    // console.log("Image:", height + ' Width:', width)
 
     return <div {...props} style={{...defaults, ...style, ...important}} className={cssClass}/>
 

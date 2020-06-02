@@ -11,8 +11,7 @@ import { UserContext } from '../context/UserContext.js'
 import authReducer from '../reducers/authReducer.js'
 import userReducer from '../reducers/userReducer.js'
 
-import CRA from './CRA.jsx'
-import Items from './Items.jsx'
+import CardsPage from './CardsPage.jsx'
 import UserForm from './UserForm.jsx'
 import About from './About.jsx'
 import LoginForm from './LoginForm.jsx'
@@ -71,6 +70,7 @@ const AppRouter = () => {
 
     }, [userAuth])
 
+
     useEffect(() => {
         console.log(`AppRouter useEffect 3 ... monitor /admin state - should run once and on - userAuth: ${userAuth}`)
         
@@ -97,6 +97,7 @@ const AppRouter = () => {
 
     }, [userAuth])
 
+
     const protect = (aComponent) => {
 
         console.log("Protect...", userAuth)
@@ -113,6 +114,7 @@ const AppRouter = () => {
 
         }
     }
+
 
     const onLogout = () => {
 
@@ -149,8 +151,7 @@ const AppRouter = () => {
                         )} />
 
                         <Route path='/' exact component={protect(UserForm)} />
-                        <Route path='/cra' component={protect(CRA)} />
-                        <Route path='/items' exact component={protect(Items)} />
+                        <Route path='/cards' exact component={protect(CardsPage)} />
                         <Route path='/about' component={About} />
                         <Route path='/login' component={LoginForm} />
                         <Route path='/register' component={RegisterForm} />
@@ -161,5 +162,6 @@ const AppRouter = () => {
         </Router>
     )
 }
+
 
 export { AppRouter as default }

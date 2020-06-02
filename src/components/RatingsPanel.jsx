@@ -23,22 +23,22 @@ const RatingsPanel = (props) => {
 
         switch (rating) {
             case (4): 
-                console.log("Rating = 4 ...");
+                // console.log("Rating = 4 ...");
                 return fourCards
                 // setImage(fourCards)
                 // break;
             case 3:
-                console.log("Rating = 3 ...");
+                // console.log("Rating = 3 ...");
                 return threeCards
                 // setImage(threeCards)
                 // break;
             case 2:
-                console.log("Rating = 2 ...");
+                // console.log("Rating = 2 ...");
                 return twoCards
                 // setImage(twoCards)
                 // return image
             case 1:
-                console.log("Rating = 1 ...");
+                // console.log("Rating = 1 ...");
                 return oneCards
                 // setImage(oneCards)
                 // break

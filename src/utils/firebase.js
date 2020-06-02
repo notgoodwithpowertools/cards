@@ -1,4 +1,13 @@
-import firebase from 'firebase';
+// import firebase from 'firebase';
+
+var firebase = require('firebase/app');
+require('firebase/firestore')
+require('firebase/auth')
+require('firebase/database')
+require('firebase/storage')
+// import 'firebase/auth';
+// import 'firebase/database';
+// import 'firebase/firestore';
 
 console.log("process.env.NODE_ENV", process.env.NODE_ENV);
 
